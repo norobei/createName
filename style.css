@@ -6,10 +6,31 @@ body {
   width: 100%;
   height: 100vh;
   display: none;
+
   &.active {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+}
+
+#wordContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5em;
+
+  .charArea {
+    width: 2em;
+    height: 2em;
+    padding: .5em;
+    background: white;
+    border-radius: 2px;
+    &:hover {
+      background-color: lemonchiffon;
+    }
+    &:active {
+      background-color: red;
+    }
   }
 }
